@@ -34,7 +34,7 @@ Pattern.compile("^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\
 <br><br>
 #### 実行例（成功例）
 正しく必須事項を入力できると、入力した内容の確認画面が表示されます。
-![birthday](https://user-images.githubusercontent.com/106609749/171470329-2951a854-7bcd-4bf0-ae4e-843a43e5540c.png)
+
 <br>
 
 #### ＜開発環境＞
