@@ -303,13 +303,11 @@ public class Register_FX extends Application{
 								"01","02","03","04","05","06","07","08","09","10",
 								"11","12","13","14","15","16","17","18","19","20",
 								"21","22","23","24","25","26","27","28");
-						cb3.setItems(ol3);
 					}else {//4,6,8,10,12月
 						ol3=FXCollections.observableArrayList(
 								"01","02","03","04","05","06","07","08","09","10",
 								"11","12","13","14","15","16","17","18","19","20",
 								"21","22","23","24","25","26","27","28","29","30");
-						cb3.setItems(ol3);
 					}
 				}else {//1,3,5,7,9,11月
 					ol3=FXCollections.observableArrayList(
@@ -317,21 +315,26 @@ public class Register_FX extends Application{
 							"11","12","13","14","15","16","17","18","19","20",
 							"21","22","23","24","25","26","27","28","29","30",
 							"31");
-					cb3.setItems(ol3);
 				}
 				//うるう年判定
-				if(Integer.parseInt(cb1.getValue().toString())%4==0) {
-					if(Integer.parseInt(cb1.getValue().toString())%100==0) {
+				if(Integer.parseInt(cb1.getValue().toString())%4==0
+				  && Integer.parseInt(cb2.getValue().toString())==2) {
+					if(Integer.parseInt(cb1.getValue().toString())%100==0
+					  && Integer.parseInt(cb2.getValue().toString())==2) {
 						if(Integer.parseInt(cb1.getValue().toString())%400==0
-								&& Integer.parseInt(cb2.getValue().toString())==2) {//うるう年
+						  && Integer.parseInt(cb2.getValue().toString())==2) {//うるう年
 							ol3=FXCollections.observableArrayList(
 									"01","02","03","04","05","06","07","08","09","10",
 									"11","12","13","14","15","16","17","18","19","20",
-									"21","22","23","24","25","26","27","28","29");
-							cb3.setItems(ol3);
+									"21","22","23","24","25","26","27","28","29");	
 						}
 					}
+					ol3=FXCollections.observableArrayList(
+							"01","02","03","04","05","06","07","08","09","10",
+							"11","12","13","14","15","16","17","18","19","20",
+							"21","22","23","24","25","26","27","28","29");
 				}
+				cb3.setItems(ol3);
 			}
 			if(!cb1.getSelectionModel().isEmpty()
 					&&!cb2.getSelectionModel().isEmpty()
