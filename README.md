@@ -30,7 +30,7 @@ Pattern.compile("^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\
 
 ##### 生年月日
 生年月日を入力する際、うるう年判定などを考慮して、存在しない日（30日、31日など）は表示しない。<br><br>
-![birthday](https://user-images.githubusercontent.com/106609749/171470010-6abdbc9f-c6fe-422d-8856-22688cd85f69.png)
+![birthday](https://user-images.githubusercontent.com/106609749/171471999-bd1b61c3-4c94-4e53-be65-d73531395c4d.png)
 <br><br>
 #### 実行例（成功例）
 正しく必須事項を入力できると、入力した内容の確認画面が表示されます。
