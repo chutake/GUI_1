@@ -34,10 +34,11 @@ Pattern.compile("^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\
 <br><br>
 #### 実行例（成功例）
 正しく必須事項を入力できると、入力した内容の確認画面が表示されます。
-![success](https://user-images.githubusercontent.com/106609749/171472180-4f1def86-6bd4-4c71-b229-8130b94b9153.png)
+![image](https://user-images.githubusercontent.com/106609749/171476769-cf7d0e99-931e-4d4c-83de-878806f61e3a.png)
+
 <br>
 
 #### ＜開発環境＞
-JRE システム・ライブラリー[java8]
+JRE システム・ライブラリー[java8]<br>
 Javaコンパイラーのコンパイラ準拠レベルは1.8です。
 
